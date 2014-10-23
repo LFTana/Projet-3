@@ -1,4 +1,4 @@
-#voilà le convertisseur nombre binaire en nombre décimal
+#voilà le script du convertisseur nombre binaire en nombre décimal
 bi=input("Entrer nombre binaire: ")
 dec,i=0,0
 while i<len(bi):
@@ -9,3 +9,8 @@ while i<len(bi):
         dec+=0
     i+=1
 print(bi,"=",dec)
+
+#voila le script du convertisseur nombre décima en nombre lbinaire
+dec=input("Entrer nombre Décimal: ")
+bi=int(dec)
+print(bin(bi)) #bin est la fonction qui permet de convertir un nombre décimal et binaire
