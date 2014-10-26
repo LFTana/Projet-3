@@ -11,7 +11,7 @@ if choix==str("B"):
             dec+=0
         i+=1
     print(bi,"vaut",dec,"en décimal")
-elif choix==str("B"):
+elif choix==str("D"):
     #voila le script du convertisseur nombre décima en nombre lbinaire
     dec=input("Entrer nombre Décimal: ")
     bi=int(dec)
