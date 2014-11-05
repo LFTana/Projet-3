@@ -22,6 +22,6 @@ elif choix==str("D") or choix==str("d"): #script du convertisseur nombre décima
                 print("Veuillez saisir un nombre")  # exception qui pourra être levé par Python si la valeur n'a pas été définie
         except ValueError:
                 print("Veuilez saisir un nombre")   #exception qui pourra être levé par Python face à diverses erreurs de « valeurs »
-        print(dec,"vaut",bin(dec),"en binaire") #bin est la fonction qui permet de convertir un nombre décimal et binaire
+        print(dec,"vaut",bin(dec)[2:],"en binaire") #bin est la fonction qui permet de convertir un nombre décimal et binaire
 else:
         print("Veuillez saisir D ou B")
