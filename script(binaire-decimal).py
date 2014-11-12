@@ -31,9 +31,9 @@ elif choix==str("D") or choix==str("d"): #script du convertisseur nombre décima
                         r=z[k]
                         ch=""
                         if int (r)=="1":
-                                ch+"0"
+                                ch=ch+"0"
                         elif int(r)=="0":
-                                ch+="1"
+                                ch=ch+"1"
                                 
                 print(ch)
 
