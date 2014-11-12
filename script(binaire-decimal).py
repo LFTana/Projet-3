@@ -29,7 +29,7 @@ elif choix==str("D") or choix==str("d"): #script du convertisseur nombre décima
                 for k in range(0,len(z)):  
                         r=z[k]
                         ch=""
-                        if int (r)="1":
+                        if int (r)=="1":
                                 ch+"0"
                         elif int(r)=="0":
                                 ch+="1"
