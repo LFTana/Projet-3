@@ -15,7 +15,7 @@ if choix==str("B") or choix==str("b"): #script du convertisseur nombre binaire e
                 else: #si le chiffre n'est pas 1 (dans ce cas là 0)
                         dec+=0
                 i+=1
-                print(bi,"vaut",dec,"en décimal")
+        print(bi,"vaut",dec,"en décimal")
 elif choix==str("D") or choix==str("d"): #script du convertisseur nombre décima en nombre lbinaire
         try:
                 dec=int(input("Entrer nombre décimal: "))
