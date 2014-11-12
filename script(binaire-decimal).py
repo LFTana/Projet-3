@@ -26,6 +26,7 @@ elif choix==str("D") or choix==str("d"): #script du convertisseur nombre décima
         if dec<0:                                   #methode du complément à 2 , afin de pouvoir convertir en négatif
                 bi=bin(dec)
                 z=bi[3:]
+                print(z)
                 for k in range(0,len(z)):  
                         r=z[k]
                         ch=""
@@ -33,7 +34,7 @@ elif choix==str("D") or choix==str("d"): #script du convertisseur nombre décima
                                 ch+"0"
                         elif int(r)=="0":
                                 ch+="1"
-                        nch+ch
+                                
                 print(ch)
 
         elif dec>0:
