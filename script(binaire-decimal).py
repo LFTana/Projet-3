@@ -26,13 +26,15 @@ elif choix==str("D") or choix==str("d"): #script du convertisseur nombre décima
         if dec<0:                                   #methode du complément à 2 , afin de pouvoir convertir en négatif
                 bi=bin(dec)
                 z=bi[3:]
-                for k in range(0,len(z)+1):  
+                for k in range(0,len(z)):  
                         r=z[k]
                         ch=""
                         if int (r)="1":
                                 ch+"0"
                         elif int(r)=="0":
-                                print(ch)
+                                ch+="1"
+                        nch+ch
+                print(ch)
 
         elif dec>0:
             print(dec,"vaut",bin(dec)[2:],"en binaire") #bin est la fonction qui permet de convertir un nombre décimal et binaire
