@@ -60,10 +60,9 @@ elif choix==str("D") or choix==str("d"): #choix pour convertir un nombre décima
 						ch=ch+"1"
 				print(ch)
 				nch=""
-				if (int(ch[len(ch)-1])+1)==1:
-					nch=ch[2:(len(ch)-1)]
-					
-					print(nch)
+				if int(ch[len(ch)-1])==0:
+					nch=ch[:(len(ch)-1)]+"1"
+					print(dec,"vaut",nch,"en binaire.")
 				else:
 					print("fsdd")
 			else:
