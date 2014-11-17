@@ -12,8 +12,19 @@ if choix==str("B") or choix==str("b"): #choix pour convertir un nombre binaire e
 	for x in range(0,len(bi)):
 		if bi[x] in ["2","3","4","5","6","7","8","9"]:
 			l=False
-	if l==False:
+	while l!=True:
 		print("Un nombre binaire est composé de 1 et de 0\nVeuillez resaisir un nombre binaire.")
+		try: #pour lever les exceptions
+			bi=input("Entrez un nombre binaire: ")
+		except NameError:
+			print("Veuillez saisir un nombre.")  # exception qui pourra être levé par Python si la valeur n'a pas été définie
+		except ValueError:
+			print("Veuilez saisir un nombre.")   #exception qui pourra être levé par Python face à diverses erreurs de « valeurs »
+		for y in range(0,len(bi)):
+			if bi[y] in ["2","3","4","5","6","7","8","9"]:
+				l=False
+			else:
+				l=True
 	else:
 		if len(bi)>16:
 			print("Veuillez saisir un nombre binaire à 16 bits")
