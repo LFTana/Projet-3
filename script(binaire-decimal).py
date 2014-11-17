@@ -80,7 +80,7 @@ elif choix==str("D") or choix==str("d"): #choix pour convertir un nombre décima
 						if int(ch[len(ch)-w])==1:
 							nch=ch[:(len(ch)-w)]+"0"*w #prend tout les chiffres après le rang w à partir de la droite et rajoute 0*(le nombre de rang)
 						else:
-							nch=ch[:(len(ch)-(w))]+"1"+"0"*(w-1) ##prend tout les chiffres après le rang w à partir de la droite, rajoute 1 puis 0*(le nombre de rang-1) car 1 est déjà un rang
+							nch=ch[:(len(ch)-(w))]+"1"+"0"*(w-1) #prend tout les chiffres après le rang w à partir de la droite, rajoute 1 puis 0*(le nombre de rang-1) car 1 est déjà un rang
 							s=False #permet de sortir de la boucle
 						w+=1
 					print(dec,"vaut",nch,"en binaire.")
