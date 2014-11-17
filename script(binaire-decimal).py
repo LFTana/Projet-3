@@ -9,13 +9,13 @@ if choix==str("B") or choix==str("b"): #choix pour convertir un nombre binaire e
 	dec=0
 	i=0
 	l=True
-	for x in range(0,len(bi)): #vérifie si c'est bien un nombre binaire
+	for x in range(0,len(bi)):
 		if bi[x] in ["2","3","4","5","6","7","8","9"]:
 			l=False
 	if l==False:
 		print("Un nombre binaire est composé de 1 et de 0\nVeuillez resaisir un nombre binaire.")
 	else:
-		if len(bi)>16: #vérifie que le nombre est sur 16 bits
+		if len(bi)>16:
 			print("Veuillez saisir un nombre binaire à 16 bits")
 		else:        
 			if int(bi)>0: 
@@ -46,13 +46,12 @@ elif choix==str("D") or choix==str("d"): #choix pour convertir un nombre décima
 			print("Veuillez saisir un nombre.")  # exception qui pourra être levé par Python si la valeur n'a pas été définie
 		except ValueError:
 			print("Veuilez saisir un nombre.")   #exception qui pourra être levé par Python face à diverses erreurs de "valeurs"
-		if dec>65535: #vérifie que le nombre est sur 16 bits
+		if dec>65535:
 			print("Veuillez saisir un nombre inférieur à 65535 car le résultat ne doit pas dépasser 16 bits.")
 		else:
 			if dec<0:
 				bi=bin(dec)
 				z=bi[3:]
-				print(z)
 				ch=""
 				for k in range(0,len(z)): #effectue le complément à deux
 					if z[k]=="1":
@@ -61,8 +60,9 @@ elif choix==str("D") or choix==str("d"): #choix pour convertir un nombre décima
 						ch=ch+"1"
 				print(ch)
 				nch=""
-				if int(len(bi))-1==1:
+				if (int(ch[len(ch)-1])+1)==1:
 					nch=ch[2:(len(ch)-1)]
+					
 					print(nch)
 				else:
 					print("fsdd")
