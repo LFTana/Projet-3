@@ -9,12 +9,12 @@ if choix==str("B") or choix==str("b"): #choix pour convertir un nombre binaire e
 	dec=0
 	i=0
 	l=True
-	for i in range(0,len(bi)):
-		if bi[i] in ["2","3","4","5","6","7","8","9"]:
+	for x in range(0,len(bi)):
+		if bi[x] in ["2","3","4","5","6","7","8","9"]:
 			l=False
 	if l==False:
-			print("Un nombre binaire est composé de 1 et de 0\nVeuillez resaisir un nombre binaire.")
-	if l==True:
+		print("Un nombre binaire est composé de 1 et de 0\nVeuillez resaisir un nombre binaire.")
+	else:
 		if len(bi)>16:
 			print("Veuillez saisir un nombre binaire à 16 bits")
 		else:        
