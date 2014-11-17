@@ -3,13 +3,13 @@ if choix==str("B") or choix==str("b"): #choix pour convertir un nombre binaire e
         try: #pour lever les exceptions
                 bi=input("Entrez un nombre binaire: ")
         except NameError:
-                print("Veuillez saisir un nombre")  # exception qui pourra être levé par Python si la valeur n'a pas été définie
+                print("Veuillez saisir un nombre.")  # exception qui pourra être levé par Python si la valeur n'a pas été définie
         except ValueError:
-                print("Veuilez saisir un nombre")   #exception qui pourra être levé par Python face à diverses erreurs de « valeurs »
+                print("Veuilez saisir un nombre.")   #exception qui pourra être levé par Python face à diverses erreurs de « valeurs »
         dec=0
         i=0
         if len(bi)>16:
-                print("Veuillez saisir un nombre binaire à 16 bits")
+                print("Veuillez saisir un nombre binaire à 16 bits.")
         else:        
                 if int(bi)>0: 
                         while i<len(bi):
@@ -19,7 +19,7 @@ if choix==str("B") or choix==str("b"): #choix pour convertir un nombre binaire e
                                 else: #si le chiffre n'est pas 1 (dans ce cas là 0)
                                         dec+=0
                                 i+=1
-                        print(bi,"vaut",dec,"en décimal")
+                        print(bi,"vaut",dec,"en décimal.")
                 else:
                         nbi=bi[1:]
                         while i<len(nbi):
@@ -30,17 +30,17 @@ if choix==str("B") or choix==str("b"): #choix pour convertir un nombre binaire e
                                         dec+=0
                                 i+=1
                         dec=-1*dec
-                        print(bi,"vaut",dec,"en décimal")
+                        print(bi,"vaut",dec,"en décimal.")
                 
 elif choix==str("D") or choix==str("d"): #choix pour convertir un nombre décimal en nombre binaire
         try:
                 dec=int(input("Entrer nombre décimal: "))
         except NameError:
-                print("Veuillez saisir un nombre")  # exception qui pourra être levé par Python si la valeur n'a pas été définie
+                print("Veuillez saisir un nombre.")  # exception qui pourra être levé par Python si la valeur n'a pas été définie
         except ValueError:
-                print("Veuilez saisir un nombre")   #exception qui pourra être levé par Python face à diverses erreurs de "valeurs"
+                print("Veuilez saisir un nombre.")   #exception qui pourra être levé par Python face à diverses erreurs de "valeurs"
         if dec>65535:
-                print("Veuillez saisir un nombre inférieur à 65535 car le résultat ne doit pas dépasser 16 bits")
+                print("Veuillez saisir un nombre inférieur à 65535 car le résultat ne doit pas dépasser 16 bits.")
         else:
                 if dec<0:
                     bi=bin(dec)
@@ -53,10 +53,11 @@ elif choix==str("D") or choix==str("d"): #choix pour convertir un nombre décima
                         elif z[k]=="0":
                             ch=ch+"1"
                     print(ch)
-                    
-        
-                    
+                    for i in range(0,len(ch)):
+                        if int(ch[i])+1=1:
+                                ch+=1
+                        else
                 else:
-                    print(dec,"vaut",bin(dec)[2:],"en binaire") #bin est la fonction qui permet de convertir un nombre décimal positif en binaire
+                    print(dec,"vaut",bin(dec)[2:],"en binaire.") #bin est la fonction qui permet de convertir un nombre décimal positif en binaire
 else:
-        print("Veuillez saisir D ou B")
+        print("Veuillez saisir D ou B.")
