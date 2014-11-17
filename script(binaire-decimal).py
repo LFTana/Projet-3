@@ -1,3 +1,4 @@
+#Enfin fini !!! :)
 choix=input("Tapez B pour convertir un nombre binaire en décimal\nou D pour convertir un nombre décimal en binaire: ")
 if choix==str("B") or choix==str("b"): #choix pour convertir un nombre binaire en nombre décimal
 	try: #pour lever les exceptions
@@ -69,13 +70,21 @@ elif choix==str("D") or choix==str("d"): #choix pour convertir un nombre décima
 						ch=ch+"0"
 					elif z[k]=="0":
 						ch=ch+"1"
-				print(ch)
 				nch=""
-				if int(ch[len(ch)-1])==0:
+				if int(ch[len(ch)-1])==0: #si le dernier chiffre du complément à deux est 0 le remplace par 1
 					nch=ch[:(len(ch)-1)]+"1"
 					print(dec,"vaut",nch,"en binaire.")
 				else:
-					print("fsdd")
+					w=1
+					s=True
+					while s==True:
+						if int(ch[len(ch)-w])==1:
+							nch=ch[:(len(ch)-w)]+"0"*w
+						else:
+							nch=ch[:(len(ch)-(w))]+"1"+"0"*(w-1)
+							s=False
+						w+=1
+					print(dec,"vaut",nch,"en binaire.")
 			else:
 				print(dec,"vaut",bin(dec)[2:],"en binaire.") #bin est la fonction qui permet de convertir un nombre décimal positif en binaire
 else:
