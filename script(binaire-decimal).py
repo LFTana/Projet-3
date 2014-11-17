@@ -9,7 +9,7 @@ if choix==str("B") or choix==str("b"): #choix pour convertir un nombre binaire e
         dec=0
         i=0
         if len(bi)>16:
-                print("Veuillez saisir un nombre binaire à 16 bit")
+                print("Veuillez saisir un nombre binaire à 16 bits")
         else:        
                 if int(bi)>0: 
                         while i<len(bi):
@@ -40,7 +40,7 @@ elif choix==str("D") or choix==str("d"): #choix pour convertir un nombre décima
         except ValueError:
                 print("Veuilez saisir un nombre")   #exception qui pourra être levé par Python face à diverses erreurs de "valeurs"
         if dec>65535:
-                print("Veuillez saisir un nombre inférieur à 65535 car le résultat ne doit pas dépasser 16 bit")
+                print("Veuillez saisir un nombre inférieur à 65535 car le résultat ne doit pas dépasser 16 bits")
         else:
                 if dec<0:
                     bi=bin(dec)
