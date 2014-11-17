@@ -58,5 +58,5 @@ elif choix==str("D") or choix==str("d"): #choix pour convertir un nombre décima
                     
                 else:
                     print(dec,"vaut",bin(dec)[2:],"en binaire") #bin est la fonction qui permet de convertir un nombre décimal positif en binaire
-        else:
+else:
         print("Veuillez saisir D ou B")
