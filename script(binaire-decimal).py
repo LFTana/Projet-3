@@ -82,7 +82,7 @@ elif choix==str("D") or choix==str("d"): #choix pour convertir un nombre décima
 						else:
 							nch=ch[:(len(ch)-(w))]+"1"+"0"*(w-1) #prend tout les chiffres après le rang w à partir de la droite, rajoute 1 puis 0*(le nombre de rang-1) car 1 est déjà un rang
 							s=False #permet de sortir de la boucle
-						w+=1
+						w+=1 #rajoute un rang
 					print(dec,"vaut",nch,"en binaire.")
 			else:
 				print(dec,"vaut",bin(dec)[2:],"en binaire.") #bin est la fonction qui permet de convertir un nombre décimal positif en binaire
