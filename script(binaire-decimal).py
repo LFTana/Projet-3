@@ -15,7 +15,7 @@ if choix==str("B") or choix==str("b"): #choix pour convertir un nombre binaire e
 	while l!=True:
 		print("Un nombre binaire est composé de 1 et de 0\nVeuillez resaisir un nombre binaire.")
 		try: #pour lever les exceptions
-			bi=input("Entrez un nombre binaire: ")
+			bi=input("Entrez un nombre binaire (mettre un moins pour les négatifs binaires): ")
 		except NameError:
 			print("Veuillez saisir un nombre.")  # exception qui pourra être levé par Python si la valeur n'a pas été définie
 		except ValueError:
